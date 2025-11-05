@@ -80,7 +80,7 @@ Dokumen komprehensif yang mencakup:
 - Design principles
 
 ### 2. [RINGKASAN_TEKNIS.md](./RINGKASAN_TEKNIS.md)
-**Ringkasan Visual (419 baris, ~15KB)**
+**Ringkasan Visual (462 baris, ~15KB)**
 
 Dokumen visual dengan ASCII diagrams:
 
