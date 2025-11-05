@@ -427,7 +427,7 @@ MAIN THREADS
 ```
 Mining Speed (Genesis, 2009):
 ├─→ Difficulty: 1.0
-├─→ Target: 0x00000000FFFF0000...
+├─→ Target: 0x00000000FFFF0000000000000000000000000000000000000000000000000000
 ├─→ Expected hashes: ~2^32 (4.3 billion)
 └─→ Time: ~10 minutes (on 2009 hardware)
 

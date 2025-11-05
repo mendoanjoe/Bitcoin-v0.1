@@ -411,6 +411,11 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast)
     if ((pindexLast->nHeight+1) % nInterval != 0)
         return pindexLast->nBits;
     
+    // Go back by what we want to be 2016 blocks worth of time
+    const CBlockIndex* pindexFirst = pindexLast;
+    for (int i = 0; pindexFirst && i < nInterval-1; i++)
+        pindexFirst = pindexFirst->pprev;
+    
     // Calculate time taken for last 2016 blocks
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
     
@@ -783,7 +788,7 @@ bool CTransaction::ConnectInputs(CTxDB& txdb, ...)
         if (!txdb.ReadTxIndex(prevout.hash, txindex))
             return false;
             
-        if (txindex.vSpent[prevout.n].IsNull())
+        if (!txindex.vSpent[prevout.n].IsNull())
             return false;  // Already spent!
         
         // Mark as spent
