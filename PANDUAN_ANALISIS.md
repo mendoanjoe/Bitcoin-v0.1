@@ -244,14 +244,14 @@ Bitcoin-v0.1/
 2. **Read Code**: Cross-reference dengan actual source code
 3. **Experiment**: Try building dan running Bitcoin v0.1 (dengan caution)
 4. **Compare**: Bandingkan dengan modern Bitcoin Core
-5. **Ask Questions**: Use dokumentasi ini untuk answer specific questions
+5. **Ask Questions**: Gunakan dokumentasi ini untuk menjawab pertanyaan spesifik
 
 ## ⚠️ Important Notes
 
 ### Historical Context
 - Bitcoin v0.1 dirilis 9 Januari 2009
 - Ini adalah implementasi pertama dari Bitcoin whitepaper
-- Beberapa bugs dan vulnerabilities sudah difix di versi selanjutnya
+- Beberapa bugs dan vulnerabilities sudah diperbaiki di versi selanjutnya
 - Code style dan practices reflect standards tahun 2009
 
 ### Known Issues di v0.1
